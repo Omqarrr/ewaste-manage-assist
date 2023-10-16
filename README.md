@@ -44,7 +44,7 @@ Simultaneously gathering data to predict and manage future e-waste generation, t
 
 INSTRUCTIONS: Replace this paragraph with a longer description of your solution. In about 500 words, describe your solution in more detail. Include the real-world problem you identified, describe the technological solution you have created, and explain how it’s an improvement over existing solutions. You can supply additional documentation in this source code repository that you link to as well.
 
-- In current digital era, we're using multiple electric devices in our day to day activities. These electronic devices are composed of different types of materials such as plastics, polymers, chemicals, metals etc. While some of the materials being very hazardous can cause serious implications on human health as well as cause environmental pollution.To address / avoid such issues, it is needed to have public awareness
+- In current digital era, we're using multiple electric devices in our day to day activities. These electronic devices are composed of different types of materials such as plastics, polymers, chemicals, metals etc. While some of the materials being very hazardous in nature can cause serious implications on human health as well as cause environmental pollution.To address / avoid such issues, it is needed to have high level public awareness by creating e-waste awareness advertisement campaign boards / notices by targeting it to be displayed at retailer's shop while SMS will be shared with customers of retail shop. Currently scope is limited for campaign on retailer side.
 
 More detail is available in our [description document](./docs/DESCRIPTION.md).
 
