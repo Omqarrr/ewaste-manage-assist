@@ -151,8 +151,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ### Authors
 
-<a href="https://github.com/Call-for-Code/Project-Sample/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Call-for-Code/Project-Sample" />
+<a href="[https://github.com/Call-for-Code/Project-Sample/graphs/contributors](https://github.com/Omqarrr/ewaste-manage-assist/graphs/contributors)">
+  <img src="https://contributors-img.web.app/image?repo=Omqarrr/ewaste-manage-assist" />
 </a>
 
 - **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
