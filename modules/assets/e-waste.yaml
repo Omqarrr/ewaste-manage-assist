@@ -1,0 +1,133 @@
+apiVersion: v0
+name: captial-qa
+content: |
+  Object: Mac
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+  Object: MainFrame
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+  Object: MacBook
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+  Object: Laptop
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+  Object: Computer
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7  
+  Object: Desktop
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+
+  Object: Mobile
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+  Object: Iphone
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+  Object: Cellphone
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+  Object: Smartphone
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+  Object: Phone
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+  Object: Cell
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+
+  Object: Desktop computers
+  E-Waste Category: Computer and Accessories, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-9
+  Object: Laptop computers
+  E-Waste Category: Computer and Accessories, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-9
+  Object: Computer monitors
+  E-Waste Category: Computer and Accessories, Not contains user data,Store at Rack-1
+  Object: Keyboards and mice
+  E-Waste Category: Computer and Accessories, Not contains user data,Store at Rack-1
+  Object: CPUs and other computer components
+  E-Waste Category: Computer and Accessories, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-9
+
+  Object: Mobile phones and smartphones
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+  Object: Tablets
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+  Object: Televisions (CRT and LCD)
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+  Object: Digital cameras
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+  Object: Audio equipment (stereo systems, headphones, speakers)
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+
+  Object: Refrigerators
+  E-Waste Category: Home Appliances, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-11
+  Object: washing machines
+  E-Waste Category: Home Appliances, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-11
+  Object: microwaves
+  E-Waste Category: Home Appliances, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-11
+  Object: air conditioners
+  E-Waste Category: Home Appliances, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-11
+  Object: vaccume cleaners
+  E-Waste Category: Home Appliances, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-11
+
+  Object: X-ray machines
+  E-Waste Category: Medical Devices, Might contains harmful devices, which need to be treated carefully while recycling,Store at Rack-12
+  Object: MRI machines
+  E-Waste Category: Medical Devices, Might contains harmful devices, which need to be treated carefully while recycling,Store at Rack-12
+  Object: Defibrillators
+  E-Waste Category: Medical Devices, Might contains harmful devices, which need to be treated carefully while recycling,Store at Rack-12
+  Object: Various medical monitors
+  E-Waste Category: Medical Devices, Might contains harmful devices, which need to be treated carefully while recycling,Store at Rack-12
+
+  Object: Photocopiers
+  E-Waste Category: Office Equipment, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-13
+  Object: Fax machines
+  E-Waste Category: Office Equipment, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-13
+  Object: Printers and scanners
+  E-Waste Category: Office Equipment, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-13
+  Object: Landline phones
+  E-Waste Category: Office Equipment, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-13
+
+  Object: Video game consoles
+  E-Waste Category: Entertainment Devices, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-14
+  Object: DVDs and Blu-ray players
+  E-Waste Category: Entertainment Devices, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-14
+  Object: Radios and CD players
+  E-Waste Category: Entertainment Devices, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-14
+
+  Object: Fluorescent and CFL bulbs
+  E-Waste Category: Lighting Equipment, Store at Rack-15
+  Object: LED bulbs
+  E-Waste Category: Lighting Equipment, Store at Rack-15
+  Object: Neon lights
+  E-Waste Category: Lighting Equipment, Store at Rack-15
+
+  Object: Power cords
+  E-Waste Category: Cables and Wiring, Can be reclaimed,Store at Rack-16
+  Object: USB cables
+  E-Waste Category: Cables and Wiring, Can be reclaimed,Store at Rack-16
+  Object: HDMI cables
+  E-Waste Category: Cables and Wiring, Can be reclaimed,Store at Rack-16
+  Object: Ethernet cables
+  E-Waste Category: Cables and Wiring, Can be reclaimed,Store at Rack-16
+
+  Object: Rechargeable batteries
+  E-Waste Category: Batteries and Chargers, Can be reclaimed,Store at Rack-17
+  Object: Chargers for various devices
+  E-Waste Category: Batteries and Chargers, Can be reclaimed,Store at Rack-17
+
+  Object: Calculators
+  E-Waste Category: Miscellaneous Electronic Devices,May contains battries, Can be reclaimed,Store at Rack-18
+  Object: Electronic toys
+  E-Waste Category: Miscellaneous Electronic Devices,May contains battries, Can be reclaimed,Store at Rack-18
+  Object: Remote controls
+  E-Waste Category: Miscellaneous Electronic Devices,May contains battries, Can be reclaimed,Store at Rack-18
+  Object: Clocks and watches
+  E-Waste Category: Miscellaneous Electronic Devices,May contains precious metals and battries, Can be reclaimed,Store at Rack-18
+
+  Object: Manufacturing machinery
+  E-Waste Category: Industrial Equipment, Few items can be reclaimed,Store at Rack-19
+  Object: Control systems
+  E-Waste Category: Industrial Equipment,May contain battries and PCB's, Can be reclaimed,Store at Rack-19
+  Object: Sensors and detectors
+  E-Waste Category: Industrial Equipment, Can be reclaimed,Store at Rack-19
+
+  Object: Solar panels
+  E-Waste Category: Renewable Energy Equipment,may contains photovoltaic cells, Can be reclaimed,Store at Rack-20
+  Object: Wind turbines
+  E-Waste Category: Renewable Energy Equipment, Can be reclaimed,Store at Rack-20
+  Object: Battery storage systems
+  E-Waste Category: Renewable Energy Equipment, recycled to recover valueables materials from battries, Can be reclaimed,Store at Rack-20
+
+  Object: {{obj}}
+  E-Waste Category:

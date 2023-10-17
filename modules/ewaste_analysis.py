@@ -5,13 +5,18 @@ from genai.extensions.langchain import LangChainInterface
 from genai.schemas import GenerateParams
 from genai.credentials import Credentials
 
-# Add the ".env" file to the project root with the GENAI_KEY and GENAI_API keys to load the keys in the module as below 
+##
+# This is the E-waste analysis module, performing the analysis on E-waste generating from smartphone devices.
+# This module is using the LangChainInterface from genai and "google/flan-t5-xxl" model for data source.    
+##
+
+# The GENAI_KEY and GENAI_API keys will be loaded from the .env file added to the project root for SDK API calls 
 load_dotenv()
 api_key = os.getenv("GENAI_KEY", None) 
 api_url = os.getenv("GENAI_API", None)
 creds = Credentials(api_key, api_endpoint=api_url)
 
-# Model parameters to specify the decoding_method,  
+# Model parameters to be specified for model configuration
 params = GenerateParams(decoding_method="greedy")
 
 # Create a model instance specifying the model, model parameters and loaded GENAI keys
