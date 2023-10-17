@@ -126,7 +126,42 @@ See below for our proposed schedule on next steps after Call for Code 2023 submi
 _INSTRUCTIONS: The following deliverables are suggested, but **optional**. Additional details like this can help the judges better review your solution. Remove any sections you are not using._
 
 ### How to run the project
+1. Create env file having credentials to connect to genai api
+```
+GENAI_KEY="<your_key_here>"
+GENAI_API="https://bam-api.res.ibm.com/v1"
+```
+2. Install python dependecies</br>
+`pip install -r requirements.txt`</br> 
+3. Execute following command to start flask webserver on port 8080</br>
+`flask --app caller run --debug --port 8080`</br>
 
+##### Executing API calls. 
+1. **Awareness Campaign**</br>
+   a. Generate Advertisement:</br>
+     http://localhost:8080/EwasteCampaignAdvertise</br>
+   b. Generate SMS:<br>
+     http://localhost:8080/EwasteCampaignSms</br>
+3. **Analysis**</br>
+     http://localhost:8080/smartphone_analysis</br>
+4. **Segregation**</br>
+     http://localhost:8080/seggregation
+   Provide input JSON format with a list of devices by making POST call to above API.</br>
+   Example inut JSON file as - </br>
+   ```
+   {
+    "devices": ["Iphone","keyboards","mice","television"]
+   }   
+   ```
+   Output:</br>
+   ```
+   {
+    "Iphone": " Mobile Phones, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-21",
+    "keyboards": " Computer and Accessories, Not contains user data,Store at Rack-1",
+    "mice": " Computer and Accessories, Not contains user data,Store at Rack-1",
+    "television": " Entertainment Devices, Can be reclaimed,Store at Rack-21"
+   }
+   ```
 INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
 
 ### Live demo
