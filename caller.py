@@ -6,7 +6,6 @@ from flask import Flask,jsonify
 from modules.ewaste_analysis import getMobileStats
 from modules.ewaste_campaign import create_advertisement
 from modules.ewaste_campaign import create_sms
-import html
 
 # Instantiating the flask app object for the caller module 
 app = Flask(__name__)
@@ -64,8 +63,8 @@ def getPhoneEWasteAnalysis(devices):
 @app.route('/adv')
 def getAdvertisement():
     #Removing the first and last line of the advertisement and adding our contact at the end
-    ad = '\n'.join(create_advertisement().strip().split('\n')[1:-1])+"\nFor more information visit XYZ\n"
-    return(html.escape(ad))
+    ad = "<pr>"+'<br>'.join(create_advertisement().strip().split('\n')[1:-1])+"<br>For more information visit XYZ<\\pr>"
+    return(ad)
 
 # App route for the SMS based advertising API call
 @app.route('/sms')
