@@ -9,7 +9,7 @@
     - [Our idea](#our-idea)
   - [Technology implementation](#technology-implementation)
     - [IBM AI service(s) used](#ibm-ai-services-used)
-    - [Other IBM technology used](#other-ibm-technology-used)
+    - [Other technology used](#other-technology-used)
     - [Solution architecture](#solution-architecture)
   - [Presentation materials](#presentation-materials)
     - [Solution demo video](#solution-demo-video)
@@ -54,7 +54,7 @@ The second aspect of our solution involves capturing data from various public so
 The third and most innovative component of our solution is the application of Generative AI in factory environments to automate the segregation of e-waste, eliminating the need for human intervention. Robots equipped with AI-driven systems are deployed to classify and sort e-waste items efficiently. These robots can identify and categorize different electronic components with exceptional precision, streamlining the sorting process. Once sorted, the e-waste is placed in specific racks for further processing or recycling. This automated system enhances workplace safety by reducing human exposure to hazardous materials, while also increasing operational efficiency in managing e-waste within the factory environment.
 
 **How the Three Components Work Together:**
-The synergy between these three components is what makes our solution truly remarkable. The awareness generated through AI-driven advertisements not only educates the public but also promotes responsible e-waste disposal practices. Concurrently, the data collected and validated from public sources helps organizations anticipate the scale of e-waste challenges they will face. This predictive insight allows for better planning and resource allocation, ensuring that e-waste is managed efficiently. 
+The synergy between these three components is what makes our solution truly remarkable. The awareness generated through AI-driven advertisements not only educates the public but also promotes responsible e-waste disposal practices. Concurrently, the data collected and validated from public sources helps organizations anticipate the scale of e-waste challenges they will face. This predictive insight allows for better planning and resource allocation, ensuring that e-waste is managed efficiently.
 
 In factory environments, the AI-powered robotic segregation system takes this a step further by automating the sorting process, reducing the risk to human workers and increasing efficiency. The data-driven approach also extends to factory operations, where the system can track the types and quantities of e-waste processed, helping organizations better manage their e-waste streams and make informed decisions on recycling and disposal methods.
 
@@ -67,24 +67,23 @@ More detail is available in our [description document](./docs/DESCRIPTION.md).
 
 ### IBM AI service(s) used
 
-_INSTRUCTIONS: Included here is a list of commonly used IBM AI services. Remove any services you did not use, or add others from the linked catalog not already listed here. Leave only those included in your solution code. Provide details on where and how you used each IBM AI service to help judges review your implementation. Remove these instructions._
+[IBM Research BAM](https://bam.res.ibm.com/)</br>
+  We're using following generative AI models from IBM Research BAM laboratory.
+- ibm/granite-13b-instruct-v1
+- google/flan-t5-xxl
 
-- [IBM Natural Language Understanding](https://cloud.ibm.com/catalog/services/natural-language-understanding) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-- [Watson Assistant](https://cloud.ibm.com/catalog/services/watson-assistant) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-- [Watson Discovery](https://cloud.ibm.com/catalog/services/watson-discovery) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-- [Watson Speech to Text](https://cloud.ibm.com/catalog/services/speech-to-text) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-- [Watson Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
-- List any additional [IBM AI services](https://cloud.ibm.com/catalog?category=ai#services) used or remove this line
 
-### Other IBM technology used
+### Other technology used</br>
+[LangChain](https://docs.langchain.com/docs/)
+Below model is used in e-waste analysis module.
+- langchain_model
 
-INSTRUCTIONS: List any other IBM technology used in your solution and describe how each component was used. If you can provide links to/details on exactly where these were used in your code, that would help the judges review your submission.
 
 ### Solution architecture
 
 Diagram and step-by-step description of the flow of our solution:
 
-![Video transcription/translaftion app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![E-waste manage assist app](images\Solution-Arch-E-waste-V1.0.png)
 
 1. The user navigates to the site and uploads a video file.
 2. Watson Speech to Text processes the audio and extracts the text.
@@ -97,14 +96,16 @@ _INSTRUCTIONS: The following deliverables should be officially posted to your My
 
 ### Solution demo video
 
-[![Watch the video](https://raw.githubusercontent.com/Liquid-Prep/Liquid-Prep/main/images/readme/IBM-interview-video-image.png)](https://youtu.be/vOgCOoy_Bx0)
+[Watch the video]
 
 ### Project development roadmap
 
 The project currently does the following things.
 
-- Feature 1
-- Feature 2
+- **Segregation of e-waste materials or devices at recycler facility center**</br>
+Here, to segregate items received at recycler we train the model `ibm/granite-13b-instruct-v1` by providing rack identifier examples to store the received item and label it.
+- **E-waste Awareness campaign**</br>
+Here, we provide a fact sheet about electronic devices and overview about e-waste recycling and use `granite-13b-instruct-v1` model to create advertisement campaign contents initially intended to be displayed at retailers end. Also, we're generating SMS contents from `google/flan-t5-xxl` model
 - Feature 3
 
 In the future we plan to...
