@@ -83,7 +83,7 @@ Below model is used in e-waste analysis module.
 
 Diagram and step-by-step description of the flow of our solution:
 
-![E-waste manage assist app](images\Solution-Arch-E-waste-V1.0.png)
+![E-waste manage assist app](images/Solution-Arch-E-waste-V3.0-light.png)
 
 1. The user navigates to the site and uploads a video file.
 2. Watson Speech to Text processes the audio and extracts the text.
