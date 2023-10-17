@@ -109,7 +109,14 @@ Here, we provide a fact sheet about electronic devices and overview about e-wast
 - Feature 3
 
 In the future we plan to...
-
+- **Mobile Application for Public Engagement** </br>
+  Create user-friendly mobile application that enables individuals to easily schedule e-waste pickups, receive notificatios about nearby collection points and access educational resources on responsible e-waste disposal.
+- **Sentiment Analysis for Ad Campaings** </br>
+  Based on the user feedback captured at various retail centers, NLP will be used to analyze the sentiments of user feedback to tailor advertising campaigns effectively. By understanding the public sentiments, organizations can create advertisements that resonate with the audience and drive positive actions.
+- **Augmented Reality Training** </br>
+Integrate with AR application that provide step-by-step instructions for safely disasembling electronic devices.  
+  
+  
 See below for our proposed schedule on next steps after Call for Code 2023 submission.
 
 ![Roadmap](./images/roadmap.jpg)
