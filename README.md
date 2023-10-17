@@ -106,7 +106,8 @@ The project currently does the following things.
 Here, to segregate items received at recycler we train the model `ibm/granite-13b-instruct-v1` by providing rack identifier examples to store the received item and label it.
 - **E-waste Awareness campaign**</br>
 Here, we provide a fact sheet about electronic devices and overview about e-waste recycling and use `granite-13b-instruct-v1` model to create advertisement campaign contents initially intended to be displayed at retailers end. Also, we're generating SMS contents from `google/flan-t5-xxl` model
-- Feature 3
+- **Data Collection and Validation for Predictive Insights** </br>
+Here, our process will we get the data from `ibm/granite-13b-instruct-v1` model and have certain assumptions based on which we will predict the e-waste generation for future perpective.
 
 In the future we plan to...
 - **Mobile Application for Public Engagement** </br>
@@ -192,12 +193,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
   <img src="https://contributors-img.web.app/image?repo=Omqarrr/ewaste-manage-assist" />
 </a>
 
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
-
 ### License
 
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
 
 ### Acknowledgments
 
-- Based on [Billie Thompson's README template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
+- Based on [IBM BAM Res](https://bam.res.ibm.com/).
