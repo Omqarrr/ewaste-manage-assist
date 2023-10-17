@@ -126,17 +126,19 @@ See below for our proposed schedule on next steps after Call for Code 2023 submi
 _INSTRUCTIONS: The following deliverables are suggested, but **optional**. Additional details like this can help the judges better review your solution. Remove any sections you are not using._
 
 ### How to run the project
+#### Pre-Requisites
 1. Create env file having credentials to connect to genai api
 ```
 GENAI_KEY="<your_key_here>"
 GENAI_API="https://bam-api.res.ibm.com/v1"
 ```
 2. Install python dependecies</br>
-`pip install -r requirements.txt`</br> 
+`pip install -r requirements.txt`</br>
+
 3. Execute following command to start flask webserver on port 8080</br>
 `flask --app caller run --debug --port 8080`</br>
 
-##### Executing API calls. 
+#### Executing API calls. 
 1. **Awareness Campaign**</br>
    a. Generate Advertisement:</br>
      http://localhost:8080/EwasteCampaignAdvertise</br>
