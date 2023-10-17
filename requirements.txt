@@ -1,0 +1,5 @@
+ibm-generative-ai
+python-dotenv
+genai
+flask
+waitress

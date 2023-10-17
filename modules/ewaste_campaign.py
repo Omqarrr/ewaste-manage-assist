@@ -5,6 +5,13 @@ from genai.model import Model
 from genai.prompt_pattern import PromptPattern
 from genai.schemas import GenerateParams
 
+
+##
+# This is the E-waste Campaigning module provides the content for the E-waste campagining advertisement and SMS based campaigning for the general awareness on the E-waste.
+# The module generates the text content based on the provided fact sheet on E-waste awareness and the prompt instruction.
+# This module is using "ibm/granite-13b-instruct-v1" from IBM AI Lab and "google/flan-t5-xxl" for generating the text based on the provided prompt.  
+##
+
 load_dotenv()
 api_key = os.getenv("GENAI_KEY", None)
 api_endpoint = os.getenv("GENAI_API", None)

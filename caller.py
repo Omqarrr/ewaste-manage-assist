@@ -2,10 +2,15 @@
 # encoding: utf-8
 
 from decimal import Decimal
-from flask import Flask,jsonify
+from flask import Flask,jsonify, request
 from modules.ewaste_analysis import getMobileStats
-from modules.ewaste_campaign import create_advertisement
-from modules.ewaste_campaign import create_sms
+from modules.ewaste_campaign import create_advertisement, create_sms
+from modules.ewaste_seggregation import seggregation_model
+
+##
+# This is a Flask app module serves the REST API requests from client the E-waste modules viz. E-waste analysis, E-waste campaigning and E-waste seggregation.
+# The local app server is configured to run on the port: 8080 on localhost. 
+##
 
 # Instantiating the flask app object for the caller module 
 app = Flask(__name__)
@@ -46,31 +51,35 @@ def getPhoneEWasteAnalysis():
 
 
 # App route for the e-waste seggregator API call
-@app.route('/seggregation')
-def getPhoneEWasteAnalysis(devices):
-    #data =  sushant's model
+@app.route('/seggregation', methods=["POST"])
+def getEwasteSeggregation():
+    
+    if request.json != "" and len(request.json["devices"]) > 0:
+        devices = request.json["devices"]
+    else:
+        return jsonify("Please provide the device name ....!")
 
-    data = {
-        "computer":"got stored in rack ..........",
-        "phone":"",
-        "medical devices":""
-    }
+    data = seggregation_model(devices)
 
     return jsonify(data) 
 
 
 # App route for the e-waste advertising API call
-@app.route('/adv')
+@app.route('/EwasteCampaignAdvertise')
 def getAdvertisement():
     #Removing the first and last line of the advertisement and adding our contact at the end
+<<<<<<< HEAD
     ad = "<pr>"+'<br>'.join(create_advertisement().strip().split('\n')[1:-1])+"<br>For more information visit XYZ<\\pr>"
+=======
+    ad = "<pr>"+'<br>'.join(create_advertisement().strip().split('\n')[1:-1])+"<br><h4>For more information visit XYZ.com </h4>"
+>>>>>>> c829754 (Final changes and enhancements in e-waste project)
     return(ad)
 
 # App route for the SMS based advertising API call
-@app.route('/sms')
+@app.route('/EwasteCampaignSms')
 def getSMS():
     #Removing last two lines of the SMS, providing health warning at the begining and adding our contact at the end
-    sms = "E-waste is hazardous to human health. "+ (('. '.join(create_sms().split('. ')[:-2])).replace('. - ', '. ')).replace('Electronic Waste','E-waste') +".\nFor more information visit XYZ\n"
+    sms = "Health Hazards. E-waste is hazardous to human health. "+ (('. '.join(create_sms().split('. ')[:-2])).replace('. - ', '. ')).replace('Electronic Waste','E-waste') +".\nFor more information visit XYZ.com\n"
     return(sms)
 
 
