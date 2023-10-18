@@ -1,0 +1,125 @@
+apiVersion: v0
+name: captial-qa
+content: |
+  Object: Mac
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+  Object: MainFrame
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+  Object: MacBook
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+  Object: Laptop
+  E-Waste Category: Computer, Might contains hard-disk, which need to be erased before recycling,Store at Rack-7
+
+  Object: Computer_monitor
+  E-Waste Category: Computer and Accessories, Not contains user data,Store at Rack-1
+  Object: Keyboard
+  E-Waste Category: Computer and Accessories, Not contains user data,Store at Rack-1
+  Object: Mouse
+  E-Waste Category: Computer and Accessories, Not contains user data,Store at Rack-1
+  Object: CPU
+  E-Waste Category: Computer and Accessories, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-9
+  Object: Graphic_card
+  E-Waste Category: Computer and Accessories, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-9
+
+  Object: Tablet
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+  Object: Digital_camera
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+  Object: Headphone
+  E-Waste Category: Consumer Electronics, Might contains magnets, which can be reclaimed before refurbishing or recycling,Store at Rack-10
+  Object: Earphone
+  E-Waste Category: Consumer Electronics, Can be reclaimed,Store at Rack-10
+  Object: Speaker
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+  Object: Smartwatch
+  E-Waste Category: Consumer Electronics, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-10
+
+  Object: Refrigerator
+  E-Waste Category: Home Appliances, Several components and materials can be reclaimed,Store at Rack-11
+  Object: Fridge
+  E-Waste Category: Home Appliances, Several components and materials can be reclaimed,Store at Rack-11
+  Object: Washing_machine
+  E-Waste Category: Home Appliances, Several components and materials can be reclaimed,Store at Rack-11
+  Object: Microwave
+  E-Waste Category: Home Appliances, Several components and materials can be reclaimed,Store at Rack-11
+  Object: Air_condition
+  E-Waste Category: Home Appliances, Several components and materials can be reclaimed,Store at Rack-11
+  Object: Mixer
+  E-Waste Category: Home Appliances, Several components and materials can be reclaimed,Store at Rack-11
+  Object: Induction_cooktop
+  E-Waste Category: Home Appliances, Several components and materials can be reclaimed,Store at Rack-11
+
+  Object: X-ray
+  E-Waste Category: Medical Devices, Might contains harmful devices, which need to be treated carefully while recycling,Store at Rack-12
+  Object: MRI
+  E-Waste Category: Medical Devices, Might contains harmful devices, which need to be treated carefully while recycling,Store at Rack-12
+  Object: Defibrillator
+  E-Waste Category: Medical Devices, Might contains harmful devices, which need to be treated carefully while recycling,Store at Rack-12
+  Object: Medical_monitor
+  E-Waste Category: Medical Devices, Might contains harmful devices, which need to be treated carefully while recycling,Store at Rack-12
+
+  Object: Mobile
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+  Object: Iphone
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+  Object: Cellphone
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+  Object: Smartphone
+  E-Waste Category: Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8
+
+  Object: Photocopier
+  E-Waste Category: Office Equipment, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-13
+  Object: Fax_machine
+  E-Waste Category: Office Equipment, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-13
+
+  Object: Videogame_console
+  E-Waste Category: Entertainment Devices, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-14
+  Object: Blu-ray_player
+  E-Waste Category: Entertainment Devices, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-14
+  Object: CD_player
+  E-Waste Category: Entertainment Devices, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-14
+
+  Object: Fluorescent_tubelight
+  E-Waste Category: Lighting Equipment, Store at Rack-15
+  Object: CFL_bulb
+  E-Waste Category: Lighting Equipment, Store at Rack-15
+  Object: LED_bulb
+  E-Waste Category: Lighting Equipment, Store at Rack-15
+  Object: Neon_light
+  E-Waste Category: Lighting Equipment, Store at Rack-15
+
+  Object: HDMI_cable
+  E-Waste Category: Cables and Wiring, Can be reclaimed,Store at Rack-16
+
+  Object: Battery
+  E-Waste Category: Batteries and Chargers, Can be reclaimed,Store at Rack-17
+  Object: Charger
+  E-Waste Category: Batteries and Chargers, Can be reclaimed,Store at Rack-17
+
+  Object: Calculator
+  E-Waste Category: Miscellaneous Electronic Devices,May contains battries, Can be reclaimed,Store at Rack-18
+  Object: Electronic_toy
+  E-Waste Category: Miscellaneous Electronic Devices,May contains battries, Can be reclaimed,Store at Rack-18
+  Object: Remote
+  E-Waste Category: Miscellaneous Electronic Devices,May contains battries, Can be reclaimed,Store at Rack-18
+  Object: Clock
+  E-Waste Category: Miscellaneous Electronic Devices,May contains precious metals and battries, Can be reclaimed,Store at Rack-18
+  Object: Watch
+  E-Waste Category: Miscellaneous Electronic Devices,May contains precious metals and battries, Can be reclaimed,Store at Rack-18
+
+  Object: Control_system
+  E-Waste Category: Industrial Equipment,May contain battries and PCB's, Can be reclaimed,Store at Rack-19
+  Object: Sensor
+  E-Waste Category: Industrial Equipment, Can be reclaimed,Store at Rack-19
+  Object: Detector
+  E-Waste Category: Industrial Equipment, Can be reclaimed,Store at Rack-19
+
+  Object: Solar_panel
+  E-Waste Category: Renewable Energy Equipment,may contains photovoltaic substance, Can be reclaimed,Store at Rack-20
+  Object: Wind_turbine
+  E-Waste Category: Renewable Energy Equipment, Can be reclaimed,Store at Rack-20
+  Object: Battery_storage_system
+  E-Waste Category: Renewable Energy Equipment, recycled to recover valueables materials from battries, Can be reclaimed,Store at Rack-20
+
+  Object: {{obj}}
+  E-Waste Category:
