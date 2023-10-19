@@ -149,26 +149,51 @@ GENAI_API="https://bam-api.res.ibm.com/v1"
 1. **Awareness Campaign**</br>
    a. Generate Advertisement:</br>
      /EwasteCampaignAdvertise</br>
+     ```
+      - E-waste recycling is a process of collecting, transporting, and processing discarded electronic devices.
+      - E-waste recycling facilities are specialized facilities designed to manage and process electronic waste.
+      - E-waste includes discarded electronic devices like smartphones, computers, laptops, TVs, printers, and more.
+      - These facilities play a crucial role in preventing environmental damage caused by improper disposal of electronic waste.
+      - Electronic waste contains hazardous materials like lead, mercury, and cadmium, which can harm the environment if not managed properly.
+      - E-waste recycling centers are equipped with specialized equipment to safely dismantle and process electronic devices.
+      - Valuable components like precious metals (gold, silver, copper) are separated for reuse in new electronics.
+      - E-waste recycling centers often collaborate with certified disposal facilities to manage hazardous waste properly.
+        For more information visit XYZ.com 
+     ```
    b. Generate SMS:<br>
      /EwasteCampaignSms</br>
+     ```
+     Health Hazards. E-waste is hazardous to human health. E-waste recycling is a process of collecting, transporting, and processing discarded electronic devices.         E-waste recycling facilities are specialized facilities designed to manage and process electronic waste. For more information visit XYZ.com
+     ```
 3. **Analysis**</br>
      /smartphone_analysis</br>
+     ``` 
+    {
+        "AI Model value for Total EWaste per year in India": "1.6 million tonnes",
+        "AI Model value for Percent Mobile contribution to EWaste": "5%",
+        "Total Mobile EWaste per year": "0.08 Million Tons",
+        "No of States in India": 28,
+        "Avg Mobile EWaste expected from a state per year": "2857.14 Tons",
+        "Say Mobile EWaste collected at seggregation facility for a state": "X Million Tons",
+        "Analysis": "Average Mobile EWaste is expected at state level is 2857.14 Tons, but actual value is X Tons The shortage suggests a  better campaiging strategy          for mobile EWaste collection at state level"
+    }
+     ```
 4. **Segregation**</br>
      /seggregation
    Provide input JSON format with a list of devices by making POST call to above API.</br>
    Example inut JSON file as - </br>
    ```
    {
-    "devices": ["Iphone","keyboards","mice","television"]
+     "devices": ["Calculator","Solar_panel","HDMI_cable","Iphone"]
    }   
    ```
    Output:</br>
    ```
    {
-    "Iphone": " Mobile Phones, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-21",
-    "keyboards": " Computer and Accessories, Not contains user data,Store at Rack-1",
-    "mice": " Computer and Accessories, Not contains user data,Store at Rack-1",
-    "television": " Entertainment Devices, Can be reclaimed,Store at Rack-21"
+      "Calculator": " Miscellaneous Electronic Devices,May contains battries, Can be reclaimed,Store at Rack-18",
+      "Solar_panel": " Renewable Energy Equipment,may contains photovoltaic substance, Can be reclaimed,Store at Rack-20",
+      "HDMI_cable": " Cables and Wiring, Can be reclaimed,Store at Rack-16",
+      "Iphone": " Phone, Might contains user data, which need to be erased before refurbishing or recycling,Store at Rack-8",
    }
    ```
 INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
