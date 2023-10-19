@@ -9,27 +9,27 @@ from modules.ewaste_seggregation import seggregation_model
 
 ##
 # This is a Flask app module serves the REST API requests from client the E-waste modules viz. E-waste analysis, E-waste campaigning and E-waste seggregation.
-# The local app server is configured to run on the port: 8080 on localhost. 
+# The local app server is configured to run on the port: 8080 on localhost.
 ##
 
-# Instantiating the flask app object for the caller module 
+# Instantiating the flask app object for the caller module
 app = Flask(__name__)
 app.json.sort_keys = False
 
 
-# App route for the e-waste analysis API call 
+# App route for the e-waste analysis API call
 @app.route('/smartphone_analysis')
 def getPhoneEWasteAnalysis():
 
-    # Get function call to obtain the data from the AI model on e-waste generation 
+    # Get function call to obtain the data from the AI model on e-waste generation
     ewaste_in_india_in_million_tons , percent_phone_ewaste_in_state = getMobileStats()
 
     # Converting the string data into the int format for the calculation
     mobile_ewaste_percent_num = int(percent_phone_ewaste_in_state.replace('%',''))
     ewaste_num = Decimal(ewaste_in_india_in_million_tons.split(' ')[0])
     mobile_ewaste = (ewaste_num * mobile_ewaste_percent_num) / 100
-    
-    # Calculating the expected e-waste to be recycled per state and generating the analysis for the final response 
+
+    # Calculating the expected e-waste to be recycled per state and generating the analysis for the final response
     no_of_states_in_india = 28
     avg_mobile_ewaste_expected = round((mobile_ewaste/no_of_states_in_india) * 1000000,2)
     analysis = "Average Mobile EWaste is expected at state level is "+str(avg_mobile_ewaste_expected) + " Tons, but actual value is X Tons"
@@ -37,23 +37,23 @@ def getPhoneEWasteAnalysis():
 
 
     # The final output in the Python Dict to be returned as JSON response
-    data = { 
-            "AI Model value for Total EWaste per year in India" : ewaste_in_india_in_million_tons , 
+    data = {
+            "AI Model value for Total EWaste per year in India" : ewaste_in_india_in_million_tons ,
             "AI Model value for Percent Mobile contribution to EWaste" : percent_phone_ewaste_in_state,
             "Total Mobile EWaste per year" : str(mobile_ewaste) + " Million Tons",
             "No of States in India" : 28,
             "Avg Mobile EWaste expected from a state per year" : str(avg_mobile_ewaste_expected) + " Tons",
             "Say Mobile EWaste collected at seggregation facility for a state": "X Million Tons",
             "Analysis" : analysis,
-        } 
-    
-    return jsonify(data) 
+        }
+
+    return jsonify(data)
 
 
 # App route for the e-waste seggregator API call
 @app.route('/seggregation', methods=["POST"])
 def getEwasteSeggregation():
-    
+
     if request.json != "" and len(request.json["devices"]) > 0:
         devices = request.json["devices"]
     else:
@@ -61,18 +61,14 @@ def getEwasteSeggregation():
 
     data = seggregation_model(devices)
 
-    return jsonify(data) 
+    return jsonify(data)
 
 
 # App route for the e-waste advertising API call
 @app.route('/EwasteCampaignAdvertise')
 def getAdvertisement():
     #Removing the first and last line of the advertisement and adding our contact at the end
-<<<<<<< HEAD
-    ad = "<pr>"+'<br>'.join(create_advertisement().strip().split('\n')[1:-1])+"<br>For more information visit XYZ<\\pr>"
-=======
     ad = "<pr>"+'<br>'.join(create_advertisement().strip().split('\n')[1:-1])+"<br><h4>For more information visit XYZ.com </h4>"
->>>>>>> c829754 (Final changes and enhancements in e-waste project)
     return(ad)
 
 # App route for the SMS based advertising API call
