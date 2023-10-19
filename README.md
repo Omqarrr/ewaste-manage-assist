@@ -135,20 +135,27 @@ _INSTRUCTIONS: The following deliverables are suggested, but **optional**. Addit
 ### How to run the project
 #### Pre-Requisites
 1. Create env file having credentials to connect to genai api
-```
-GENAI_KEY="<your_key_here>"
-GENAI_API="https://bam-api.res.ibm.com/v1"
-```
+  ```
+  GENAI_KEY="<your_key_here>"
+  GENAI_API="https://bam-api.res.ibm.com/v1"
+  ```
 2. Install python dependecies</br>
 `pip install -r requirements.txt`</br>
 
 3. Execute following command to start flask webserver on port 8080</br>
 `flask --app caller run --debug --port 8080`</br>
 
+##### Common issues and fixes while troubeleshooting above flask run -  
+1. ImportError for class "Credentials", "Model" in Lib\site-packages\genai\extensions\langchain\llm.py- </br>
+fix: Change the import statement as "from genai.credentials import Credentials" and "from genai.model import Model"
+2. ImportError for "version" in Python file-</br>
+fix: Check the error in the respective python file and replace with the name "__version__".
+
 #### Executing API calls. 
 1. **Awareness Campaign**</br>
    a. Generate Advertisement:</br>
-     /EwasteCampaignAdvertise</br>
+     API call: `/EwasteCampaignAdvertise`</br>
+     Sample API response below:</br>
      ```
       - E-waste recycling is a process of collecting, transporting, and processing discarded electronic devices.
       - E-waste recycling facilities are specialized facilities designed to manage and process electronic waste.
@@ -161,12 +168,14 @@ GENAI_API="https://bam-api.res.ibm.com/v1"
         For more information visit XYZ.com 
      ```
    b. Generate SMS:<br>
-     /EwasteCampaignSms</br>
+     API call: `/EwasteCampaignSms`</br>
+     Sample API response below:</br>
      ```
      Health Hazards. E-waste is hazardous to human health. E-waste recycling is a process of collecting, transporting, and processing discarded electronic devices.         E-waste recycling facilities are specialized facilities designed to manage and process electronic waste. For more information visit XYZ.com
      ```
 3. **Analysis**</br>
-     /smartphone_analysis</br>
+     API call: `/smartphone_analysis`</br>
+     Sample API response below:</br>
      ``` 
     {
         "AI Model value for Total EWaste per year in India": "1.6 million tonnes",
@@ -179,8 +188,9 @@ GENAI_API="https://bam-api.res.ibm.com/v1"
     }
      ```
 4. **Segregation**</br>
-     /seggregation
+   API call: /seggregation
    Provide input JSON format with a list of devices by making POST call to above API.</br>
+   Sample API response below:</br>
    Example inut JSON file as - </br>
    ```
    {
