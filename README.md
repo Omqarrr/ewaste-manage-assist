@@ -111,7 +111,7 @@ Here, to segregate items received at recycler we train the model `ibm/granite-13
 - **Data Collection and Validation for Predictive Insights** </br>
 Here, our process will we get the data from `ibm/granite-13b-instruct-v1` model and have certain assumptions based on which we will predict the e-waste generation for future perpective.
 
-In the future we plan to...
+### In the future we plan to...
 - **Integrate Segregation Model with Robots** </br>
   The segregation model will be integrated with Robots in Recycler plants to safeguard human exposure to hazardous componets that can cause major health issues.
 
