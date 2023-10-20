@@ -96,7 +96,7 @@ _INSTRUCTIONS: The following deliverables should be officially posted to your My
 
 ### Solution demo video
 
-[Watch the video]
+[![Watch the video](https://img.youtube.com/vi/XYADxc_TWj0/maxresdefault.jpg)](https://youtu.be/XYADxc_TWj0)
 
 ### Project development roadmap
 
