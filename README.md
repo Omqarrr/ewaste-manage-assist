@@ -126,7 +126,7 @@ Here, our process will we get the data from `ibm/granite-13b-instruct-v1` model 
   
 See below for our proposed schedule on next steps after Call for Code 2023 submission.
 
-![Roadmap](./images/roadmap.jpg)
+![Roadmap](./images/Roadmap-1.jpg)
 
 ## Additional details
 
